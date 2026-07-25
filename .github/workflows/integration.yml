@@ -25,14 +25,14 @@ jobs:
           sudo apt-get remove --purge nginx*
           sudo apt-get autoremove
           sudo apt-get autoclean
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@7f4fc3e22c37d6ff65e88745f38bd3157c663f7c # v4
         with:
           python-version: '3.9'
       - uses: ./.github/actions/setup-step-ca
-      - uses: roots/setup-trellis-cli@v1
+      - uses: roots/setup-trellis-cli@aca8a0213f85ccee09f8f42597391934a03430e9 # v1
         with:
           ansible-vault-password: 'fake'
           auto-init: false
