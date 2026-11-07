@@ -8,7 +8,7 @@ jobs:
   post:
     runs-on: ubuntu-latest
     steps:
-    - uses: roots/discourse-topic-github-release-action@main
+    - uses: roots/discourse-topic-github-release-action@77eed546968e63f902b87581831dacefead0e567 # main
       with:
         discourse-api-key: ${{ secrets.DISCOURSE_RELEASES_API_KEY }}
         discourse-base-url: ${{ secrets.DISCOURSE_BASE_URL }}
